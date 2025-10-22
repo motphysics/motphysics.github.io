@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mot.physics — electronic artist</title>
+
+  <!-- Typewriter & dark aesthetic fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Space+Mono&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #050506;
+      --accent: #00fff2;
+      --accent2: #ff00ff;
+      --muted: #a0a0a0;
+      --font1: 'Space Mono', monospace;
+      --font2: 'Special Elite', cursive;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: radial-gradient(circle at 20% 20%, rgba(0,255,242,0.1), transparent 60%),
+                  radial-gradient(circle at 80% 80%, rgba(255,0,255,0.08), transparent 70%),
+                  var(--bg);
+      color: #eaeaea;
+      font-family: var(--font1);
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 30px;
+    }
+
+    h1 {
+      font-family: var(--font2);
+      font-size: 3rem;
+      color: var(--accent);
+      text-shadow: 0 0 15px rgba(0,255,242,0.3);
+    }
+
+    h2 {
+      font-family: var(--font1);
+      font-size: 1.1rem;
+      color: var(--muted);
+      letter-spacing: 1px;
+      margin-top: 8px;
+    }
+
+    .typewriter {
+      font-family: var(--font2);
+      font-size: 1.2rem;
+      margin: 40px auto 60px;
+      width: fit-content;
+      white-space: nowrap;
+      border-right: 3px solid var(--accent);
+      overflow: hidden;
+      color: var(--accent2);
+      animation: typing 3.5s steps(40, end), blink .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 0 30px rgba(0,0,0,0.4);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      backdrop-filter: blur(4px);
+    }
+
+    h3 {
+      font-family: var(--font2);
+      font-size: 1.4rem;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    p { color: var(--muted); font-size: 0.95rem; }
+
+    ul {
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    li {
+      margin-bottom: 6px;
+      padding: 5px 0;
+      border-bottom: 1px dashed rgba(255,255,255,0.05);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.8rem;
+      padding: 40px 0 20px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--accent2);
+    }
+
+    /* subtle animated stars background */
+    .stars {
+      position: fixed;
+      inset: 0;
+      background: repeating-radial-gradient(#fff 1px, transparent 2px);
+      background-size: 200px 200px;
+      opacity: 0.1;
+      animation: drift 100s linear infinite;
+      z-index: -1;
+    }
+    @keyframes drift {
+      from { transform: translateY(0) rotate(0deg); }
+      to { transform: translateY(-200px) rotate(360deg); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="stars"></div>
+
+  <header>
+    <h1>mot.physics</h1>
+    <h2>electronic composer · textured sound design · live experimental electric violin</h2>
+    <div class="typewriter">sonic experiments for your earholes...</div>
+  </header>
+
+  <main>
+    <section>
+      <h3>About</h3>
+      <p>
+        mot.physics crafts electronic soundscapes merging analog warmth with violin chaos —
+        a collision of field recordings, granular synthesis, and live instrumental performance.
+        Performances explore the boundaries of texture and noise, often improvised using custom rigs and expressive techniques.
+      </p>
+    </section>
+
+    <section>
+      <h3>Latest Releases</h3>
+      <ul>
+        <li><strong></strong> —This Album is Considered Trivial and Has Been Left As An Exercise To The Listener 2023 album</li>
+        <li><strong></strong> —Analog Hearts, Digital Ghosts 2024 album </li>
+        <li><strong>Look to the Future</strong> — single</li>
+      </ul>
+      <p>
+        Stream on <a href="#">Bandcamp</a> · <a href="https://motphysics.bandcamp.com/">SoundCloud</a>
+      </p>
+    </section>
+
+    <section>
+      <h3>Upcoming Shows</h3>
+      <ul>
+        <li>Nov 28, 2025 — Living Gallery/TBA, Brooklyn</li>
+        <li>Dec 02, 2025 — TBA, Los Angeles</li>
+        <li>Dec 05, 2025 — Electric Lodge, Los Angeles</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:arielrisacorbo@gmail.com">arielrisacorbo@gmail.com</a></p>
+      <p>Follow: <a href="#">Instagram</a> · <a href="#">Twitter</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 mot.physics · crafted in neon and code
+  </footer>
+</body>
+</html>
